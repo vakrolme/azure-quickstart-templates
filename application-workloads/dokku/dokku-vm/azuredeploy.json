@@ -29,9 +29,9 @@
     },
     "ubuntuOSVersion": {
       "type": "string",
-      "defaultValue": "20_04-lts-gen2",
+      "defaultValue": "22_04-lts-gen2",
       "allowedValues": [
-        "20_04-lts-gen2"
+        "22_04-lts-gen2"
       ],
       "metadata": {
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values: 20_04-lts-gen2."
@@ -39,7 +39,7 @@
     },
     "dokkuVersion": {
       "type": "string",
-      "defaultValue": "0.28.4",
+      "defaultValue": "0.33.8",
       "metadata": {
         "description": "The Dokku version to launch"
       }
@@ -88,7 +88,7 @@
   "variables": {
     "storageAccountName": "[format('{0}dokku', uniqueString(resourceGroup().id))]",
     "imagePublisher": "Canonical",
-    "imageOffer": "0001-com-ubuntu-server-focal",
+    "imageOffer": "0001-com-ubuntu-server-jammy",
     "nicName": "dokkuVMNic",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
